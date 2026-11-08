@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>luigi.cards</title>
+    <meta name="theme-color" content="#f6ecdc" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="C A R D S" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="og:site_name" content="luigi.cards" />
+    <meta property="og:title" content="luigi.cards" />
+    <meta property="og:description" content="luigi.cards" />
+    <meta name="description" content="F I O R E L A — sua linha do tempo feminina, cartinha a cartinha." />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:image" content="https://luigi.cards/lello-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://luigi.cards/lello-og.png" />
+    <script type="module" crossorigin src="/assets/index-Ca1oNeeT.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CJWsk3VF.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script><style>.boom-dot{opacity:0 !important}.cover-life{font-family:"Jeffesta",var(--font-display,var(--font-sans)) !important;font-weight:400 !important;font-size:clamp(4.5rem,26cqw,10.5rem) !important;letter-spacing:0 !important;text-transform:lowercase !important;color:#fffbf3 !important;line-height:.92 !important;position:relative !important;display:inline-block !important}</style><style>
+/* letra e número menores, e um pouco mais pra baixo — sem tirar a carta do lugar */
+/* só o texto do meio muda de tamanho; os campos vazios ficam como eram,
+   senão o cabeçalho engorda e empurra a CARTA pra baixo */
+[data-timeline-column] > header > div > p:nth-child(2){
+  font-size:22px !important;
+  transform:translateY(16px);
+}
+[data-timeline-column] > header > div > p:nth-child(1),
+[data-timeline-column] > header > div > p:nth-child(3){ font-size:11px !important; }
+[data-timeline-column] > header > p{ font-size:10px !important; }
+/* a carta volta exatamente pro lugar dela: o cabeçalho mantém a altura de sempre */
+[data-timeline-column] > header{ min-height:67px; }
+/* a carta fica SEMPRE na mesma altura: sem essa trava, a coluna tinha 24px
+   de folga de rolagem e cada carta parava num lugar diferente */
+[data-timeline-column]{ overflow-y:hidden !important; }
+/* todas as cartas na mesma altura da primeira: 13px a menos de respiro em cima */
+[data-timeline-column] .day-cards{ padding-top:4.6px !important; }
+/* o pontinho vermelho fica invisível, mas continua clicável no lugar dele */
+.glow-dot--right2 span{ opacity:0 !important; }
+</style>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
